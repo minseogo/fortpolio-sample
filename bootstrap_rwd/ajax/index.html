@@ -40,23 +40,23 @@
                 <a class="nav-link dropdown-toggle" href="#"  role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Plan</a></li>
-                  <li><a class="dropdown-item" href="#">UXUI Design</a></li>
-                  <li><a class="dropdown-item" href="#">CI/BI</a></li> 
-                  <li><a class="dropdown-item" href="#">bootstrap</a></li>                    
+                  <li><a class="dropdown-item" href="#portfolio">Plan</a></li>
+                  <li><a class="dropdown-item" href="#portfolio">UXUI Design</a></li>
+                  <li><a class="dropdown-item" href="#portfolio">CI/BI</a></li> 
+                  <li><a class="dropdown-item" href="#portfolio">bootstrap</a></li>                    
                 </ul>
               </li>                  
               <li class="nav-item  dropdown">
                 <a class="nav-link dropdown-toggle" href="#"  role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">Team-Project</a>
                 <ul class="dropdown-menu">                     
-                  <li><a class="dropdown-item" href="#">mySQL</a></li>
-                  <li><a class="dropdown-item" href="#">API</a></li>
-                  <li><a class="dropdown-item" href="#">WebApp</a></li>
-                  <li><a class="dropdown-item" href="#">React</a></li>
+                  <li><a class="dropdown-item" href="#team-project">mySQL</a></li>
+                  <li><a class="dropdown-item" href="#team-project">API</a></li>
+                  <li><a class="dropdown-item" href="#team-project">WebApp</a></li>
+                  <li><a class="dropdown-item" href="#team-project">React</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">E-커머스</a></li>
-                  <li><a class="dropdown-item" href="#">그누보드</a></li>
+                  <li><a class="dropdown-item" href="#team-project">E-커머스</a></li>
+                  <li><a class="dropdown-item" href="#team-project">그누보드</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">                  
@@ -65,24 +65,67 @@
                   Communication
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Figma</a></li>
-                  <li><a class="dropdown-item" href="#">Git</a></li>                      
-                  <li><a class="dropdown-item" href="#">Notion</a></li>
+                  <li><a class="dropdown-item" href="#community">Figma</a></li>
+                  <li><a class="dropdown-item" href="#community">Git</a></li>                      
+                  <li><a class="dropdown-item" href="#community">Notion</a></li>
                 </ul>
               </li> 
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact me</a>
+                <a class="nav-link" href="#contact">Contact me</a>
               </li>                
             </ul>
             <ul class="Communication-navi d-flex align-items-center ps-0 mb-0">
-              <li><a class="pe-2" href="#">Figma</a></li>
-              <li><a class="pe-2" href="#">Git</a></li>                      
-              <li><a class="" href="#">Notion</a></li>
+              <li><a class="pe-2" href="#" target="_blank">Figma</a></li>
+              <li><a class="pe-2" href="#" target="_blank">Git</a></li>                      
+              <li><a class="" href="#" target="_blank">Notion</a></li>
             </ul>               
           </div>
         </div>
       </nav>
 </header>
+<section id="swiper" class="vh-100 bg-light">
+
+
+</section>
+
+<section id="portfolio" class="vh-100 bg-light pt-5">
+  <div class="container mt-5">
+    <ul class="nav nav-tabs my-5" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false" disabled>Disabled</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0"></div>
+      <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0"></div>
+      <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0"></div>
+      <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0"></div>
+    </div>
+  </div>
+</section>
+<section id="team-project" class="vh-100 bg-dark"></section>
+<section id="community" class="vh-100 bg-light"></section>
+<section id="contact" class="vh-100 bg-warning"></section>
+
+<!-- 검정 배경의 하얀색글자 동그랗게 오른쪽 하단에 있게 버튼 생성 -->
+<a href= "#top" class="position-fixed text-white bg-dark rounded-circle end-0 bottom-0">
+  버튼
+</a>
+
+<footer id="ft" class="bg-dark text-center py-5 text-white">
+  이미지 배경처리와 카피문구 / sns
+</footer>
+
+
 
 <!-- 부트스트랩 5버전부터는 자바스크립트 , 4버전 이하는 제이쿼리이기 때문에 4버전 이하를 사용할땐 스크립트 안넣어주어도 된다 -->
 <script src="/bootstrap_rwd/lib/bootstrap.bundle.min.js"></script> 
