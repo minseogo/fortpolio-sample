@@ -1,43 +1,83 @@
-body{
-    #hd{
-        background-color: transparent;
-        transition: 0.5s;
-        h1{
-            span:first-child{
-                display: none;
-            }
-            span:last-child{
-                display: block;
-            }
-        }
-        a{
-            color:black;
+
+// body를 이용한 css 와 헤더의 로고가 영어에서 한글로의 변경 첫번째 식
+// body{
+//     #hd{
+//         background-color: transparent;
+//         transition: 0.5s;
+//         h1{
+//             span:first-child{
+//                 display: none;
+//             }
+//             span:last-child{
+//                 display: block;
+//             }
+//         }
+//         a{
+//             color:black;
             
-        }
-    }
-    #quick{
-        transform: translateX(100%);
+//         }
+//     }
+//     #quick{
+//         transform: translateX(100%);
+//         transition: 0.5s;
+//     }
+// }
+// body.scroll{
+//     #hd{
+//         background-color: rgba(0,0,0,.5);
+//         padding: 0.3rem 0;
+//         h1{
+//             span:first-child{
+//                 display: block;
+//             }
+//             span:last-child{
+//                 display: none;
+//             }
+//         }
+//         a{
+//             color:white;
+//         }
+//     }
+//     #quick{
+//         transform: translateX(0);
+       
+//     }
+// }
+
+
+// hd를 이용한 css 두번째 식
+#hd{
+    background-color: transparent;
+    transition: 0.5s;
+    padding: 15px 0;
+    a{
+        color: black;
         transition: 0.5s;
     }
-}
-body.scroll{
-    #hd{
-        background-color: rgba(0,0,0,.5);
-        padding: 0.3rem 0;
-        h1{
-            span:first-child{
-                display: block;
+    h1{
+        a{
+            span{
+                span{
+                    display: none;
+                }
             }
-            span:last-child{
-                display: none;
+        }
+    }
+
+    &.scroll{
+        background-color: rgba(0,0,0,.5);
+        padding: 0;
+        h1{
+            a{
+                span{
+                    span{
+                        display: block;
+                    }
+                }
             }
         }
         a{
-            color:white;
+            color: white;
         }
-    }
-    #quick{
-        transform: translateX(0);
-       
     }
 }

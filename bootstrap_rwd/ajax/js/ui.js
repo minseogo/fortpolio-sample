@@ -1,20 +1,24 @@
+// 첫번째 body를 이용한 식
+// $(function(){
+//     $(window).on('scroll', function(){
+//         let scrps = $(this).scrollTop();
+//         if (scrps > 80) { 
+//             $("body").addClass("scroll")   
+//         } else {
+//             $("body").removeClass("scroll")
+//         }
+//     });
+// });
+
+
+// 두번째 hd를 이용한 식
 $(function(){
     $(window).on('scroll', function(){
         let scrps = $(this).scrollTop();
-        if (scrps > 80) { // 스크롤이 아래로
-            // $("#hd").addClass('bg-dark border-bottom border-white').removeClass("bg-white");
-            // $("#hd li a").addClass("text-white").removeClass("text_black")
-
-            $("body").addClass("scroll")
-           
-            
-            
+        if (scrps > 80) { // 스크롤이 아래로        
+            $("#hd").addClass("scroll")
         } else {
-            // $("#hd").removeClass('bg-dark border-bottom border-white').addClass("bg-white");
-            // $("#hd li a").addClass("text-white").removeClass("text_black")
-            $("body").removeClass("scroll")
+            $("#hd").removeClass("scroll")
         }
-
-        // $("body").attr("data-scrollps", $(this).scrollTop() )
     });
 });
