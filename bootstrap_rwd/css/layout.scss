@@ -1,0 +1,43 @@
+body{
+    #hd{
+        background-color: transparent;
+        transition: 0.5s;
+        h1{
+            span:first-child{
+                display: none;
+            }
+            span:last-child{
+                display: block;
+            }
+        }
+        a{
+            color:black;
+            
+        }
+    }
+    #quick{
+        transform: translateX(100%);
+        transition: 0.5s;
+    }
+}
+body.scroll{
+    #hd{
+        background-color: rgba(0,0,0,.5);
+        padding: 0.3rem 0;
+        h1{
+            span:first-child{
+                display: block;
+            }
+            span:last-child{
+                display: none;
+            }
+        }
+        a{
+            color:white;
+        }
+    }
+    #quick{
+        transform: translateX(0);
+       
+    }
+}

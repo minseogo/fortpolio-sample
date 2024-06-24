@@ -14,14 +14,23 @@
     <!-- 쿼리스트링 부트스트랩 버전을 보를땐 .css?version=5.0&worker=gms 식으로 사용하기 -->
 
     <!-- 개인꺼 / min -->
+    <link rel="stylesheet" href="/bootstrap_rwd/css/common.css">
+    <link rel="stylesheet" href="/bootstrap_rwd/css/layout.min.css">
    
 </head>
 <body>
-  <header id="hd" class="border-bottom fixed-top bg-white">
-    <nav class="navbar navbar-expand-md ">
+  <header id="hd" class="border-bottom fixed-top ">
+    <nav class="navbar navbar-expand-md">
         <div class="container-lg">
             <h1>
-                <a class="navbar-brand" href="#">svg로고만들기</a>
+                <a class="navbar-brand text_black " href="#">
+                  <span>
+                    한글이름
+                  </span>
+                  <span>
+                    영어이름
+                  </span>                  
+                </a>
             </h1>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
@@ -30,15 +39,12 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-lg-auto mb-2 mb-lg-0">                 
-              <li class="nav-item">
-                <a class="nav-link" href="#">About Me</a>
-              </li>
+            
               <li class="nav-item  dropdown">
-                <a class="nav-link dropdown-toggle" href="#"  role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
+                <a class="nav-link dropdown-toggle ms-3 " href="#"  role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">My Portfolio</a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#portfolio">Plan</a></li>
                   <li><a class="dropdown-item" href="#portfolio">UXUI Design</a></li>
@@ -47,7 +53,7 @@
                 </ul>
               </li>                  
               <li class="nav-item  dropdown">
-                <a class="nav-link dropdown-toggle" href="#"  role="button"
+                <a class="nav-link dropdown-toggle ms-3 " href="#"  role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">Team-Project</a>
                 <ul class="dropdown-menu">                     
                   <li><a class="dropdown-item" href="#team-project">mySQL</a></li>
@@ -60,7 +66,7 @@
                 </ul>
               </li>
               <li class="nav-item dropdown">                  
-                <a class="nav-link dropdown-toggle" href="#" role="button" 
+                <a class="nav-link dropdown-toggle ms-3 " href="#" role="button" 
                 data-bs-toggle="dropdown" aria-expanded="false">
                   Communication
                 </a>
@@ -71,13 +77,16 @@
                 </ul>
               </li> 
               <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact me</a>
-              </li>                
+                <a class="nav-link ms-3 " href="#">About Me</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link text-dark" href="#contact">Contact me</a>
+              </li>                 -->
             </ul>
             <ul class="Communication-navi d-flex align-items-center ps-0 mb-0">
-              <li><a class="pe-3" href="#" target="_blank">Figma</a></li>
-              <li><a class="pe-3" href="#" target="_blank">Git</a></li>                      
-              <li><a class="" href="#" target="_blank">Notion</a></li>
+              <li><a class="pe-3 text-decoration-none text_black" href="#" target="_blank">Figma</a></li>
+              <li><a class="pe-3 text-decoration-none text_black" href="#" target="_blank">Git</a></li>                      
+              <li><a class="text-decoration-none text_black" href="#" target="_blank">Notion</a></li>
             </ul>               
           </div>
         </div>
@@ -117,7 +126,7 @@
 <section id="contact" class="vh-100 bg-warning"></section>
 
 <!-- 검정 배경의 하얀색글자 동그랗게 오른쪽 하단에 있게 버튼 생성 -->
-<a href= "#top" class="position-fixed text-white bg-dark rounded-circle end-0 bottom-0">
+<a href= "#top" class="position-fixed text-white bg-dark rounded-circle end-0 bottom-0" id="quick">
   버튼
 </a>
 

@@ -1,0 +1,34 @@
+body #hd {
+  background-color: transparent;
+  transition: 0.5s;
+}
+body #hd h1 span:first-child {
+  display: none;
+}
+body #hd h1 span:last-child {
+  display: block;
+}
+body #hd a {
+  color: black;
+}
+body #quick {
+  transform: translateX(100%);
+  transition: 0.5s;
+}
+
+body.scroll #hd {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.3rem 0;
+}
+body.scroll #hd h1 span:first-child {
+  display: block;
+}
+body.scroll #hd h1 span:last-child {
+  display: none;
+}
+body.scroll #hd a {
+  color: white;
+}
+body.scroll #quick {
+  transform: translateX(0);
+}
